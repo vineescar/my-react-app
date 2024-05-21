@@ -35,7 +35,7 @@ test('subtraction operation', () => {
 test('multiplication operation', () => {
   render(<Calculator />);
   
-  const num1Input = screen.getByPlaceholderText('Ent first number');
+  const num1Input = screen.getByPlaceholderText('Enter first number');
   const num2Input = screen.getByPlaceholderText('Enter second number');
   const mulButton = screen.getByText('Multiplication');
 
@@ -46,8 +46,6 @@ test('multiplication operation', () => {
   const mulResult = screen.getByText('Multiplication Result: 15');
   expect(mulResult).toBeInTheDocument();
 });
-
-
 
 test('division operation', () => {
   render(<Calculator />);
