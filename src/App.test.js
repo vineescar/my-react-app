@@ -50,7 +50,7 @@ test('multiplication operation', () => {
 test('division operation', () => {
   render(<Calculator />);
   
-  const num1Input = screen.getByPlaceholderText('Ente first number');
+  const num1Input = screen.getByPlaceholderText('Enter first number');
   const num2Input = screen.getByPlaceholderText('Enter second number');
   const divButton = screen.getByText('Division');
 
